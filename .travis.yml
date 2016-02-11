@@ -7,6 +7,7 @@ branches:
   except:
   - "/^debian\\/\\d/"
 deploy:
+  skip_cleanup: true
   provider: bintray
   file: ".bintray.info"
   user: "bandwith"
