@@ -4,8 +4,8 @@
        fields are mandatory. */
 
     "package": {
-        "name": "auto-upload", // Bintray package name
-        "repo": "myRepo", // Bintray repository name
+        "name": "openmediavault-omvextrasorg", // Bintray package name
+        "repo": "bandwith", // Bintray repository name
         "subject": "bandwith", // Bintray subject (user or organization)
         "desc": "I was pushed completely automatically",
         "website_url": "www.jfrog.com",
