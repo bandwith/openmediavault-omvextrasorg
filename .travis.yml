@@ -1,11 +1,14 @@
 sudo: required
-
 services:
-  - docker
-
+- docker
 script:
-  - wget -O- http://travis.debian.net/script.sh | sh -
-
+- wget -O- http://travis.debian.net/script.sh | sh -
 branches:
   except:
-    - /^debian\/\d/
+  - "/^debian\\/\\d/"
+deploy:
+  provider: bintray
+  file: ".bintray.info"
+  user: "bandwith"
+  key:
+    secure: It9kKeUrsRnAMraJybxFPqgILWMG7B1Gc/yt4rJ16onJu4eFxRlhdneQ+xDsKY6M5yOw1vBaqfl6Q4p7L8apYMFqvOG/Fe2pbcR8D3iBVSIQfgytt1V5+YMfkrrsSWc0mSbVk8FzrGzKSW2TI6gR7aBzhMFfPrqKMhWmIL724yez2TU0Imz8NoDjfvN0DHBSVWpJq+/jVj4U7iKIb/vZ0292lKB01iGvGnrMi/uYZR3b8DNvT4i9YQBNFrTfTBUxfTLMZ3QAiF/2mRpb9rJX0T18HKMui/00QvIqPQ9jMM3SGFcc5L7wI55sohRv1z/R8UenJ6VRcua+tmL6nigX9ApjnW63TwDQx6793u5F5akWyQIURprQDF7hQLRItq9UM1tz4HV9DQJpJGFt607XE+EucN9hz3sjJsKuMYvVNeRt/GaQrNrtFmlGIaML/qWnRYmmdGbAcB8y7tI/ZqLqxLEXxa7C0TIwBxaLouaVYY52uPUEUX2mV67/tNjIG7i/+oOWzuaVBItrkKLd+Jf8T3uj7soTxeAwoKkIj0cK0YPD0bfNddah7p2tKfytWQbhSEY4cQK/BsWtlk4sY9gawvYyz7OI65MWxSpYM/7GNkZlmkf872AyEhyFXI8wbHBu2G0QheFisBsPuLqgzqlJOUZSY3OqQb8fajiF2gXkllo=
