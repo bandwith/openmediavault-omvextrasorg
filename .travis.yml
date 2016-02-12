@@ -9,6 +9,7 @@ services:
 - docker
 script:
 - wget -O- http://travis.debian.net/script.sh | sh -
+- ls -al /home/travis/ 
 branches:
   except:
   - "/^debian\\/\\d/"
