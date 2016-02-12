@@ -1,7 +1,7 @@
 sudo: required
 env:
   global:
-    - TRAVIS_DEBIAN_TARGET_DIR="/build"
+    - TRAVIS_DEBIAN_TARGET_DIR="/home/travis/"
     - TRAVIS_DEBIAN_DISTRIBUTION="jessie"
     - TRAVIS_DEBIAN_NETWORK_ENABLED="true"
 services:
