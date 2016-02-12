@@ -53,7 +53,7 @@
     Note: Regular expressions defined as part of the includePattern and excludePattern properties must be wrapped with brackets. */
 
     "files":
-        [{"includePattern": "/home/travis/*/*/*\.deb", "uploadPattern": "$1",
+        [{"includePattern": "/home/travis/(*\.deb)", "uploadPattern": "$1",
         "matrixParams": {
             "deb_distribution": "jessie",
             "deb_component": "main",
